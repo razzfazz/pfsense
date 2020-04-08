@@ -56,7 +56,7 @@
 		if ($check_cdir) {
 			$ip_array = explode('/', $ip);
 			if (count($ip_array) == 2) {
-				if ($ip_array[1] < 1 || $ip_array[1] > 32) {
+				if (/*$ip_array[1] < 1 ||*/ $ip_array[1] > 32) {
 					return false;
 				}
 			} else {
